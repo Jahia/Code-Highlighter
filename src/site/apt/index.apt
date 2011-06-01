@@ -1,0 +1,70 @@
+Code Highlighter
+
+*How to use ?
+
+1- Deploy the module
+2- Drag and drop the codeHighLighterResources module in pages that need code highlighting or put it directly in templates to allow code highlighting on every pages
+3- Create some rich text, with the component of your choice and inside a rich text write your code sample.
+4- Now you just need to encapsulate this code with the tag [code:****] with **** the language of the code sample. It could be html, javascript, java, ...
+
+So at this end you write :
+
+[code:javascript]
+    function myJSFunction()
+    {
+        //Do some stuff
+    }
+[/code:javascript]
+
+And the module do the coloration for you. Please note that the indentation is not managed by the module.
+
+A lot of languages are supported, the full list and some details are available online :  http://alexgorbatchev.com/SyntaxHighlighter/manual/brushes/
+Here is a quick list of language keyword to use after [code :
+
+html
+xml
+xslt
+xhtml
+vb
+vbnet
+sql
+scala
+rails
+ror
+ruby
+py
+python
+ps
+powershell
+plain
+text
+php
+perl
+pl
+jfx
+javafx
+java
+js
+jscript
+javascript
+groovy
+erl
+erlang
+diff
+patch
+delphi
+pas
+pascal
+css
+cpp
+c
+c-sharp
+csharp
+cf
+coldfusion
+bash
+shell
+as3
+actionscript3
+
+

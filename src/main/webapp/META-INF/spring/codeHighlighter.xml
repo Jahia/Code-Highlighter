@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean name="CodeFilter" class="org.jahia.modules.codeHighlighter.filter.CodeFilter">
+        <property name="priority" value="22" />
+        <property name="applyOnConfigurations" value="page" />
+        <property name="applyOnTemplateTypes" value="html" />
+        <property name="openTagRegexp"><value>(\[code:([a-zA-Z0-9_]*)\])</value></property>
+        <property name="closingTagRegexp"><value>(\[/code:([a-zA-Z0-9_]*)\])</value></property>
+        <property name="brushesRegexp"><value>aabrushesaa</value></property>
+        <property name="brushesMapping">
+            <map>
+                <entry key="html" value="Xml" />
+                <entry key="xml" value="Xml" />
+                <entry key="xslt" value="Xml" />
+                <entry key="xhtml" value="Xml" />
+                <entry key="vb" value="Vb" />
+                <entry key="vbnet" value="Vb" />
+                <entry key="sql" value="Sql" />
+                <entry key="scala" value="Scala" />
+                <entry key="rails" value="Ruby" />
+                <entry key="ror" value="Ruby" />
+                <entry key="ruby" value="Ruby" />
+                <entry key="py" value="Python" />
+                <entry key="python" value="Python" />
+                <entry key="ps" value="PowerShell" />
+                <entry key="powershell" value="PowerShell" />
+                <entry key="plain" value="Plain" />
+                <entry key="text" value="Plain" />
+                <entry key="php" value="Php" />
+                <entry key="perl" value="Perl" />
+                <entry key="pl" value="Perl" />
+                <entry key="jfx" value="JavaFX" />
+                <entry key="javafx" value="JavaFX" />
+                <entry key="java" value="Java" />
+                <entry key="js" value="JScript" />
+                <entry key="jscript" value="JScript" />
+                <entry key="javascript" value="JScript" />
+                <entry key="groovy" value="Groovy" />
+                <entry key="erl" value="Erlang" />
+                <entry key="erlang" value="Erlang" />
+                <entry key="diff" value="Diff" />
+                <entry key="patch" value="Diff" />
+                <entry key="delphi" value="Delphi" />
+                <entry key="pas" value="Delphi" />
+                <entry key="pascal" value="Delphi" />
+                <entry key="css" value="Css" />
+                <entry key="cpp" value="Cpp" />
+                <entry key="c" value="Cpp" />
+                <entry key="c-sharp" value="CSharp" />
+                <entry key="csharp" value="CSharp" />
+                <entry key="cf" value="ColdFusion" />
+                <entry key="coldfusion" value="ColdFusion" />
+                <entry key="bash" value="Bash" />
+                <entry key="shell" value="Bash" />
+                <entry key="as3" value="AS3" />
+                <entry key="actionscript3" value="AS3" />
+            </map>
+        </property>
+    </bean>
+</beans>
