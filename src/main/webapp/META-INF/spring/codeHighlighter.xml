@@ -5,7 +5,6 @@
 
     <bean name="CodeFilter" class="org.jahia.modules.codeHighlighter.filter.CodeFilter">
         <property name="priority" value="22" />
-        <property name="applyOnConfigurations" value="page" />
         <property name="applyOnTemplateTypes" value="html" />
         <property name="openTagRegexp"><value>(\[code:([a-zA-Z0-9_]*)\])</value></property>
         <property name="closingTagRegexp"><value>(\[/code:([a-zA-Z0-9_]*)\])</value></property>
