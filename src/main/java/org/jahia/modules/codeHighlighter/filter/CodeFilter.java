@@ -68,10 +68,14 @@ public class CodeFilter  extends AbstractFilter {
         Iterator<String> keySetIterator= brushes.keySet().iterator();
         while (keySetIterator.hasNext())
               brushesList = brushesList + brushes.get(keySetIterator.next()) + ",";
-        brushesList = brushesList.substring(0,brushesList.length()-1);
 
-        //Replace the brushes tag in the HTML buffer by the brushes list
-        previousOut = previousOut.replaceAll(brushesRegexp, brushesList);
+        if(!brushesList.isEmpty())
+        {
+            brushesList = brushesList.substring(0,brushesList.length()-1);
+
+            //Replace the brushes tag in the HTML buffer by the brushes list
+            previousOut = previousOut.replaceAll(brushesRegexp, brushesList);
+        }
 
         //Replace all the closing code tags in the HTML buffer
         previousOut = previousOut.replaceAll(closingTagRegexp,"</code></pre>");
